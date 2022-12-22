@@ -12,6 +12,6 @@ describe('Notification Content', () => {
   });
 
   test('eu espero que o content tenha mais de 240 caracteres', () => {
-    expect(() => new Content('a'.repeat(252))).toThrow();
+    expect(() => new Content('a'.repeat(242))).toThrow();
   });
 });
